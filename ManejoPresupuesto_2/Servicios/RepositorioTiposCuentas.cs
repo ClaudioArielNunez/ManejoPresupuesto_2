@@ -80,7 +80,7 @@ namespace ManejoPresupuesto_2.Servicios
         {
             using var conexion = new SqlConnection(connectionString);
             await conexion.ExecuteAsync("DELETE FROM TiposCuentas WHERE Id = @Id", new {id});
-            //
+            
         }
     }
 }
